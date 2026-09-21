@@ -27,10 +27,10 @@ The implementation is in [`project/`](project/).
 
 ## Build and Run
 
-From PowerShell:
+From the repository root, on Windows (PowerShell):
 
 ```powershell
-cd D:\oop_project\oop_cpp_pws\project
+cd project
 g++ -Wall -std=c++11 -c main.cpp
 g++ -Wall -std=c++11 -c Game.cpp
 g++ -Wall -std=c++11 -c Board.cpp
@@ -52,14 +52,14 @@ make
 Run the large archive test runner:
 
 ```powershell
-cd D:\oop_project\oop_cpp_pws\project
+cd project
 python .\tests\run_tests.py
 ```
 
 Run the official level-style text tests:
 
 ```powershell
-cd D:\oop_project\oop_cpp_pws\project
+cd project
 
 foreach ($level in 1..4) {
     foreach ($file in Get-ChildItem ".\test\data\$level-*.txt" | Where-Object { $_.Name -notlike '._*' }) {

@@ -1,34 +1,17 @@
-# Build artifacts
-build/
-bin/
-obj/
+# Build output
 *.o
-*.a
-*.so
-*.dylib
+*.obj
 *.exe
 *.out
-*.app
+*.class
+chess
+project/tests/outputs/
 
-# IDEs and Editors
-.vscode/
+# IDE
 .idea/
-*.swp
-*.swo
-*.bak
-*~
+*.iml
+.vscode/
 
-# Operating System Files
+# OS
 .DS_Store
 Thumbs.db
-._*
-
-# Project-specific ignores
-project/chess
-project/*.o
-
-# Lab files (Hidden temporarily by user request)
-
-*.zip
-.*/
-project/tests/outputs/*
